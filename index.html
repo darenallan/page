@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check-in Conférence</title>
+    <title>Check-in Réunion</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -76,27 +76,32 @@
         .logo {
             text-align: center;
             margin-bottom: 20px;
-            
+        }
+        
+        .logo img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
-    
 
     <div class="card">
-        <div class = "logo">
-        <img src="logo.jpeg" alt="Logo Legal Tech" width="200">
-    </div>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo Legal Tech" width="200">
+        </div>
+        
         <h2>Conférence Légal tech</h2>
 
+        <form action="https://formsubmit.co/boxedbyallan31@gmail.com" method="POST">
 
-        <form action="https://formsubmit.co/imane.hannoud@ynov.com" method="POST">
+            <input type="hidden" name="_cc" value="imane.hannoud@ynov.com">
 
-            <input type="hidden" name="_subject" value="Nouvelle Présence Réunion !">
+            <input type="hidden" name="_subject" value="Nouvelle Présence Conférence !">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table"> <input type="hidden" name="_next"
-                value="https://google.com">
+            <input type="hidden" name="_template" value="table"> 
+            <input type="hidden" name="_next" value="https://google.com">
 
             <label>Nom</label>
             <input type="text" name="nom" placeholder="Votre Nom" autocomplete="family-name" required>
@@ -106,6 +111,9 @@
 
             <label>Email</label>
             <input type="email" name="email" placeholder="votre@email.com" autocomplete="email" required>
+
+             <label>Numéro de téléphone</label>
+            <input type="tel" name="telephone" placeholder="Votre numéro de téléphone" autocomplete="tel" required>
 
             <label>Profession / Poste</label>
             <input type="text" name="profession" placeholder="Ex: Développeur, Manager..."
@@ -119,6 +127,4 @@
     </div>
 
 </body>
-
 </html>
-
